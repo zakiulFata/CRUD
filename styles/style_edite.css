@@ -1,0 +1,94 @@
+/* Reset dan font global */
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Membuat form berada di tengah halaman */
+}
+
+/* Container untuk form edit */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label untuk input */
+label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Input text dan email */
+input[type="text"],
+input[type="email"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Input focus */
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #4caf50;
+}
+
+/* Tombol submit */
+button[type="submit"] {
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover tombol submit */
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsivitas untuk ukuran layar lebih kecil */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+    }
+}

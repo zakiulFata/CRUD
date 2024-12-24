@@ -1,0 +1,178 @@
+/* Reset dan font global */
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 2px 0 #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 10px;
+}
+
+
+.cari {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+/* Form pencarian */
+.cari form {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px; /* Spasi antar elemen form */
+    margin-top: 20px;
+}
+
+/* Input pencarian */
+.cari form input[type="text"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 250px;
+    transition: width 0.3s ease, border-color 0.3s ease;
+}
+
+/* Fokus input pencarian */
+.cari form input[type="text"]:focus {
+    width: 280px;
+    border-color: #4caf50;
+}
+
+/* Tombol pencarian */
+.cari form button[type="submit"] {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover tombol pencarian */
+.cari form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Tombol utama */
+.btn {
+    padding: 12px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Tabel */
+.table-container {
+    overflow-x: auto;
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabel header dan cells */
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #333;
+}
+
+/* Header tabel */
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Gaya baris tabel */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Tombol edit dan hapus */
+.btn-edit, .btn-delete {
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+/* Tombol edit */
+.btn-edit {
+    background-color: #ffa500;
+}
+
+.btn-edit:hover {
+    background-color: #e59400;
+}
+
+/* Tombol delete */
+.btn-delete {
+    background-color: #f44336;
+}
+
+.btn-delete:hover {
+    background-color: #d73727;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    form input[type="text"], form button[type="submit"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
